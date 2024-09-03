@@ -4,97 +4,392 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-
+        <title>ALJUN OBLEADA</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e345eb7187.js"></script>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+<script src="https://kit.fontawesome.com/e345eb7187.js"></script>
         <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+       <style type="text/css">
+           @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900&display=swap');
 
-            .full-height {
-                height: 100vh;
-            }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+*{margin:0;padding:0; color:#d2dae0; font-font-family: 'Montserrat', sans-serif;letter-spacing:2px;}
+body{
+  background:#0a3353;
+max-width: 100%;
+    overflow-x: hidden;overflow-y:hidden;
+}
 
-            .position-ref {
-                position: relative;
-            }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+.side1{
+  color:white;
+  position:fixed;
+  top:0;left:0;
+  background-color:#0d4068;
+  width:40px;height:100vh;
+  float:left;
+  box-shadow: 0px 10px 5px 5px rgba(0,0,0,0.50);
+  z-index:5;
+}
+.clearfix {
+  overflow: auto;
+}
+.side1 h4{
+  position:fixed;
+  transform:rotate(270deg);
+  display:block;
+  left:-105px;bottom:130px;
+  margin:10px;
+  letter-spacing:2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:600;
+}
 
-            .content {
-                text-align: center;
-            }
+.site{
+  height:100vh;
+  margin:0 25px 0 70px;
+  display:grid;
+  grid-template-columns:250px 1fr;
+  grid-template-rows:80vh;
+  grid-gap:25px;
+  z-index:2;
+}
+.side-section{
+  background-color:#0d4068;
+  margin-top:25px;
+  box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.50);
+  height:89%;
+  
+}
+.profile{
+  display:grid;
+  grid-template-rows:193px; 25px;  
+}
+.pic{
+  width:150px; height:150px; 
+  margin:auto;
+  border:10px solid #224764;
+}
+.pic>img{
+  max-width:130px; height:130px;
+  border:10px solid #0a3353;
+}
+.name{
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+  vertical-align:middle;
+  font-size:20px;
+  line-height:24px;
+  margin-bottom:50px;
+ }
+}
+.nav{
+  height:100%;
+  display:grid;
+  grid-template-rows:auto auto auto auto auto;
+  grid-autoflow:row;
+}
+.nav .nav-list{
+ 
+  list-style:none;
+}
+.nav .nav-list .nav-link{
+  color:#a4a7aa;
+  font-family: 'Montserrat', sans-serif;
+  font-size:90%;
+  font-weight:600;
+  text-decoration:none;
+  display:block;
+  padding:7px;
+  border-top:2px inset #3c6699;
+}
+.nav-link i{
+  display:inline-block;
+  width:20px; height:16px; inline-height:25px;
+  margin-right: 12px;
+  padding:8px;
+  border-radius:50%;
+  color:inherit;
+  border:1px inset #3c6699;
+  text-align:center;
+  vertical-align:middle;
+}
+.nav-link:hover > i{
+  color:#eee;
+}
 
-            .title {
-                font-size: 84px;
-            }
+.nav .nav-list .nav-link:hover{
+color:#ecedee;  
+}
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+.main-section{
+  background:linear-gradient(0deg,rgba(10,54,86,0.8),rgba(63,81,181,0.5));
+  margin-top:25px;
+  height:92vh;
+  border:5px solid #0d4068;
+  box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.50);
+  overflow-x:hidden;
+  overflow-y:scroll;
+  scroll-behavior:smooth;
+  scroll-snap-type:y mandatory;
+}
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
+.landing{
+  height:95vh;width:100%;
+    background:linear-gradient(0deg,rgba(10,54,86,0.8),rgba(63,81,181,0.5)),url(https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80);
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  self-align:left;
+}
+.landing p{
+  font-size:30px;
+  font-family: 'Montserrat', sans-serif;
+  position:relative;
+  top:50%;
+  transform:translateY(-60%);
+  margin:0 20px;
+}
+.big{
+  font-size:55px;
+  font-family:montserrat;
+  color:#eee !important;
+  font-weight:900;
+}
+.small{
+  font-size:19px;
+  letter-spacing:4px;
+  font-family: 'Montserrat', sans-serif;
+}
+.btn{
+  display:block;
+  font-family: 'Montserrat', sans-serif;
+  width:140px;
+  border-radius:30px;
+  float:left;
+  margin:0 10px 0 20px; padding:12px;
+  text-decoration:none;
+  text-align:center;
+  position:relative;
+  top:50%;
+  transform:translateY(-120%);
+}
+
+.btn1{
+  border:2px solid #eee;
+  color:#eee;
+  font-size:16px;
+}
+
+.btn2{
+  background-color:#eee;
+  border:2px solid #eee;;
+  color:#0a3353;
+  font-weight:600;
+  }
+.btn:hover{
+  background-color:#ff6738;
+  color:#0a3353;
+  border:2px solid #ff6738;
+  font-weight:600;
+  
+}
+.about{
+  height:100vh; width:100%;
+  display:grid;
+  grid-template-rows:60vh 40vh;
+  
+}
+.about .about-header{
+  background:linear-gradient(0deg,rgba(18,24,54,0.8),rgba(20,30,67,0.7)),url(https://images.unsplash.com/photo-1535340582796-799448c62e08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);
+  background-position:center;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-size:cover;
+  self-align:left;
+
+  
+}
+.about-header p{
+  position:relative;
+  display: block;
+  top:40%;text-align:center;
+}
+.about .about-header p i{
+  display:block;
+  font-size:100px;
+ padding:25px;
+  width:95px;
+  text-align:center;
+  color:#eee;
+  background-color:#000e;
+  border-radius:50%;margin-left:50%;
+  box-shadow:0 0 15px #00bcd4;
+  transform:translateX(-50%);
+}
+
+.about-discription{
+  display:grid;
+  grid-template-columns:255px auto;
+    margin:25px; border-gap:20px;
+  align-items:center;
+}
+.about-discription .imgbox{
+  width:250px; height:250px;
+}
+.about-discription .imgbox img{
+  display:inline-block;
+  width:250px; height:250px;
+  align-content:center; margin:auto;
+}
+
+.about-discription .discription-box{
+ height:250px; width:auto;
+  padding:20px;
+  
+}
+.about-discription .discription-box h1{
+  font-family:montserrat;
+  margin:21px 0 20px 0;
+  self-align:center;
+  align-content:middle;
+}
+.about-discription .discription-box p{
+  font-family:montserrat;
+  margin:0 0 15px 0;
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------Small Screens--------------------------*/
+
+
+@media only screen and (max-width: 1000px) {
+  
+    .site{
+      display:grid;
+      grid-template-columns:1fr;
+  }
+
+  .side-section{
+    display:none;
+  }
+
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0px;
+}
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0a3151;
+  border: 0px none #1cb1f5;
+  opacity:0.1;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff00ff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ff0080;
+}
+::-webkit-scrollbar-track {
+  background: #666;
+  border: 0px none #000;
+  border-radius: 58px; opacity:0.3;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #063360;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+</style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+      <div class="side1"> <h4>This is my<span style="color:#00bcd4;"> website CV.</span></h4></div>
+<div class="site">
+  <!---site starts--->
+  
+  <div class="side-section">
+    <!---side section starts----->
+    <div class="profile">
+      <div class="pic">
+        <img src="https://cdn.pixabay.com/photo/2017/12/25/22/52/tiger-3039280_960_720.jpg" alt="tiger-pic">
+      </div>
+      <div class="name"><b>Prakash</b> Kumar</div>
+     
+      <ul class="nav">
+        <li class="nav-list">
+          <a href="#home" class="nav-link"><i class="fas fa-home"></i>HOME</a>
+        </li>
+        <li class="nav-list">
+          <a href="#about" class="nav-link"><i class="fas fa-user"></i>ABOUT</a>
+        </li>
+        <li class="nav-list">
+          <a href="#resume" class="nav-link"><i class="fas fa-fire"></i>RESUME</a>
+        </li>
+        <li class="nav-list">
+          <a href="PROJECTS" class="nav-link"><i class="fas fa-laptop-code"></i>PROJECTS</a>
+        </li>
+        <li class="nav-list">
+          <a href="CONTACT" class="nav-link"><i class="fas fa-headphones"></i>CONTACT</a>
+        </li>
+      </ul>
+    </div>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+  <!--side section ends--->
+  </div>
+  
+  <div class="main-section">
+    <!----main section starts------>
+    
+    <div class="landing" id="home"> <!--Home starts---->
+      <p>HI, I'M <br><span class="big">Prakash Kumar</span><br><span class="small">I try to make web look better.</span></p>
+      <a href="#" class="btn btn1">Download CV</a>
+      <a href="#contact" class="btn btn2">Hire Me</a>
+      
+</div><!--home ends---->
+    
+    <div class="about" id="about">
+      <div class="about-header">
+        <p class="big"><i class="fas fa-user-tie"></i>ABOUT ME</p>
+      </div>
+      <div class="about-discription">
+        <div class="imgbox">
+          <img src="https://cdn.pixabay.com/photo/2017/12/25/22/52/tiger-3039280_960_720.jpg" alt="tiger-pic"></div>
+      <div class="discription-box">
+        <H1>HELLO</H1>
+        <p>I’m Prakash Kumar. I designed this site so you can get to know me on a personal level. My career as a Web Designer, my portfolio, my personal photography, my favorite quotes, and so much more. So please sit back and enjoy!</p>
         </div>
+      
+    </div>
+    
+		
+    <!----main section ends---->
+  </div>
+  
+  
+  
+  <!---site ends---->
+</div>
     </body>
 </html>
